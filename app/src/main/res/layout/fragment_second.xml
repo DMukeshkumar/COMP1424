@@ -8,17 +8,74 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/secondFragment"
+        android:id="@+id/hikeNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Data Structures"
-        android:textColor="#43a047"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Name of Hike"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="44dp" />
 
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Hike"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <TextView
+        android:id="@+id/parkingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking Available"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        tools:layout_editor_absoluteX="41dp" />
+
+    <TextView
+        android:id="@+id/lengthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length of Hike"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/difficultyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level of Difficulty"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="338dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
