@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Name of Hike"
         tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="44dp" />
+        tools:layout_editor_absoluteY="74dp" />
 
     <TextView
         android:id="@+id/locationText"
@@ -36,32 +35,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Parking Available"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        tools:layout_editor_absoluteX="41dp" />
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="506dp" />
 
     <TextView
         android:id="@+id/lengthText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Length of Hike"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="400dp" />
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="544dp" />
 
     <TextView
         android:id="@+id/difficultyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="Level of Difficulty"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintBottom_toTopOf="@+id/difficultyChoice"
+        tools:layout_editor_absoluteX="35dp" />
 
     <TextView
         android:id="@+id/descriptionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Description"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="511dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="653dp" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -73,9 +73,29 @@
         tools:layout_editor_absoluteY="230dp" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="104dp"
-        android:layout_height="29dp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="338dp" />
+        android:id="@+id/difficultyChoice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/enterHikeDetailPage"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="371dp">
+        <RadioButton
+            android:id="@+id/radio_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/easy"
+            android:theme="@style/enterHikeDetailPage" />
+        <RadioButton
+            android:id="@+id/radio_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium" />
+        <RadioButton
+            android:id="@+id/radio_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hard" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,8 +6,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
 
-    public class SecondFragment extends Fragment {
+public class SecondFragment extends Fragment {
 
         public SecondFragment(){
             // require a empty public constructor
@@ -17,5 +18,6 @@ import android.view.ViewGroup;
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
             return inflater.inflate(R.layout.fragment_second, container, false);
+            RadioGroup.
         }
     }

@@ -20,4 +20,8 @@
         <item name="colorAccent">@color/green</item>
     </style>
 
+    <style name="enterHikeDetailPage" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textColor">@color/purple_200</item>
+    </style>
+
 </resources>
