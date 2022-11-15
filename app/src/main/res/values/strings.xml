@@ -8,4 +8,7 @@
     <string name="medium">Medium</string>
     <string name="hard">Hard</string>
 
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
 </resources>

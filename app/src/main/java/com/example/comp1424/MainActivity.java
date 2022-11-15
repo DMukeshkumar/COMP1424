@@ -1,12 +1,13 @@
 package com.example.comp1424;
 
-import java.io.*;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
-import com.example.comp1424.*;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.os.Bundle;
 import android.view.MenuItem;
+
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -22,9 +23,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.person);
 
+
+
     }
     FirstFragment firstFragment = new FirstFragment();
-    SecondFragment secondFragment = new SecondFragment();
+    EditHike secondFragment = new EditHike();
     ThirdFragment thirdFragment = new ThirdFragment();
 
     @Override
