@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     }
     FirstFragment firstFragment = new FirstFragment();
-    SecondFragment secondFragment = new SecondFragment();
+    EditHike secondFragment = new EditHike();
     ThirdFragment thirdFragment = new ThirdFragment();
 
     @Override
